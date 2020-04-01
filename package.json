@@ -8,7 +8,10 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate && npm run bindata",
+    "lint": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
+    "bindata": "cd web && go run main.go && cd ..",
+    "go": "npm run generate && go run *.go"
   },
   "dependencies": {
     "nuxt": "^2.0.0",
