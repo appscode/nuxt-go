@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 module github.com/appscode/nuxt-go
-=======
-module github.com/tamalsaha/nuxt-go
->>>>>>> 3f926d6... Add macaron server
 
 go 1.14
 
