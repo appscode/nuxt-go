@@ -50,6 +50,18 @@ export default {
   axios: {
   },
   /*
+  ** Router configuration
+  */
+ router: {
+    extendRoutes (routes, resolve) {
+      routes.push({
+        name: 'go',
+        path: '/go',
+        component: resolve(__dirname, 'pages/templates/go.vue')
+      })
+    }
+  },
+  /*
   ** Build configuration
   */
   build: {

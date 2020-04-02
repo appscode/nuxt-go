@@ -23,7 +23,7 @@ func main() {
 		FileSystem: web.StaticFS,
 	}))
 
-	m.Get("/templates/go", web.HTMLRenderer(), func(ctx *macaron.Context) {
+	m.Get("/go", web.HTMLRenderer(), func(ctx *macaron.Context) {
 		ctx.Data["HostedOn"] = "GitHub"
 		ctx.HTML(200, "go")
 	})
