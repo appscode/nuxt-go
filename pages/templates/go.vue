@@ -16,14 +16,17 @@
         >
           Documentation
         </a>
-        <a
-          v-pre
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          {{ .HostedOn }}
-        </a>
+        <keep-ssr wrapper-id="test-button">
+          <a
+            v-pre
+            href="https://github.com/nuxt/nuxt.js"
+            target="_blank"
+            class="button--grey"
+            id="test-button"
+          >
+            {{ .HostedOn }}
+          </a>
+        </keep-ssr>
       </div>
     </div>
   </div>
@@ -31,11 +34,17 @@
 
 <script>
 import Logo from '~/components/Logo.vue'
-
+import KeepSsr from "@/components/KeepSsr";
 export default {
+  data() {
+    return {
+      btnHTML: null
+    }
+  },
   components: {
-    Logo
-  }
+    Logo,
+    KeepSsr
+  },
 }
 </script>
 
