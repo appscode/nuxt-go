@@ -52,8 +52,8 @@ export default {
   /*
   ** Router configuration
   */
- router: {
-    extendRoutes (routes, resolve) {
+  router: {
+    extendRoutes(routes, resolve) {
       routes.push({
         name: 'go',
         path: '/go',
@@ -75,7 +75,10 @@ export default {
     /*
     ** You can extend webpack config here
     */
-    extend (config, ctx) {
+    extend(config, ctx) {
     }
+  },
+  generate: {
+    exclude: [/^\/go/]
   }
 }

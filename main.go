@@ -13,7 +13,7 @@ func main() {
 	m := macaron.New()
 	m.Use(macaron.Logger())
 	m.Use(macaron.Recovery())
-	m.Use(macaron.Renderer())
+	// m.Use(macaron.Renderer())
 	m.Use(macaron.Static("", macaron.StaticOptions{
 		//Prefix:      "",
 		//SkipLogging: false,
