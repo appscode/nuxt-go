@@ -14,9 +14,10 @@
     "go": "npm run generate && go run *.go"
   },
   "dependencies": {
-    "nuxt": "^2.0.0",
+    "@appscode/vue-ssr": "0.0.1",
+    "@nuxtjs/axios": "^5.3.6",
     "@nuxtjs/bulma": "^1.2.1",
-    "@nuxtjs/axios": "^5.3.6"
+    "nuxt": "^2.0.0"
   },
   "devDependencies": {
     "eslint-config-prettier": "^6.10.0",
