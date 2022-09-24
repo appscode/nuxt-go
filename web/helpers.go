@@ -57,7 +57,7 @@ func Asset(fs http.FileSystem, name string) ([]byte, error) {
 		return nil, err
 	}
 	defer f.Close()
-	return ioutil.ReadAll(f)
+	return io.ReadAll(f)
 }
 
 func AssetNames(fs http.FileSystem) []string {
