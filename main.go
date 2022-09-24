@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"net/http"
 
-	_ "github.com/shurcooL/vfsgen"
 	"github.com/appscode/nuxt-go/web"
+	_ "github.com/shurcooL/vfsgen"
 	"gopkg.in/macaron.v1"
 )
 
