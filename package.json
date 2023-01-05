@@ -14,7 +14,7 @@
     "go": "npm run generate && go run *.go"
   },
   "dependencies": {
-    "nuxt": "^2.0.0",
+    "nuxt": "^2.15.8",
     "@nuxtjs/bulma": "^1.2.1",
     "@nuxtjs/axios": "^5.3.6"
   },
