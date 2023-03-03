@@ -35,5 +35,5 @@ func ReadFile(fs http.FileSystem, path string) ([]byte, error) {
 		return nil, err
 	}
 	defer rc.Close()
-	return ioutil.ReadAll(rc)
+	return io.ReadAll(rc)
 }
