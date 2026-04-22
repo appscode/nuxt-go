@@ -16,7 +16,7 @@
         >
           Documentation
         </a>
-        <keep-ssr wrapper-id="test-button">
+        <ssr eid="test-button">
           <a
             v-pre
             href="https://github.com/nuxt/nuxt.js"
@@ -26,7 +26,7 @@
           >
             {{ .HostedOn }}
           </a>
-        </keep-ssr>
+        </ssr>
       </div>
     </div>
   </div>
@@ -34,7 +34,7 @@
 
 <script>
 import Logo from '~/components/Logo.vue'
-import KeepSsr from "@/components/KeepSsr";
+import Ssr from "@appscode/vue-ssr";
 export default {
   data() {
     return {
@@ -43,7 +43,7 @@ export default {
   },
   components: {
     Logo,
-    KeepSsr
+    Ssr
   },
 }
 </script>
